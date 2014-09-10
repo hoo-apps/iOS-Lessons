@@ -1,0 +1,14 @@
+[
+	{
+		“Fact” : “UVA is a school”,
+		“Truth” : “True”
+	},
+	{
+		“Fact” : “UVA is not a school”,
+		“Truth” : “False”
+	},
+	{
+		“Fact” : “You Just Completed the Gold Challenge”
+		“Truth” : “True”
+	}
+]
