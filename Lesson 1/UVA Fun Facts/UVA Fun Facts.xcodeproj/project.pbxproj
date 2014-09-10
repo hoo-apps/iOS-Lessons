@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0AFD4BD19BDF18100D0716B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AFD4BC19BDF18100D0716B /* Foundation.framework */; };
+		D0AFD4BF19BDF18100D0716B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AFD4BE19BDF18100D0716B /* CoreGraphics.framework */; };
+		D0AFD4C119BDF18100D0716B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AFD4C019BDF18100D0716B /* UIKit.framework */; };
+		D0AFD4C719BDF18100D0716B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0AFD4C519BDF18100D0716B /* InfoPlist.strings */; };
+		D0AFD4C919BDF18100D0716B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AFD4C819BDF18100D0716B /* main.m */; };
+		D0AFD4CD19BDF18100D0716B /* UFFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AFD4CC19BDF18100D0716B /* UFFAppDelegate.m */; };
+		D0AFD4CF19BDF18100D0716B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0AFD4CE19BDF18100D0716B /* Images.xcassets */; };
+		D0AFD4D619BDF18200D0716B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AFD4D519BDF18200D0716B /* XCTest.framework */; };
+		D0AFD4D719BDF18200D0716B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AFD4BC19BDF18100D0716B /* Foundation.framework */; };
+		D0AFD4D819BDF18200D0716B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AFD4C019BDF18100D0716B /* UIKit.framework */; };
+		D0AFD4E019BDF18200D0716B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0AFD4DE19BDF18200D0716B /* InfoPlist.strings */; };
+		D0AFD4E219BDF18200D0716B /* UVA_Fun_FactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AFD4E119BDF18200D0716B /* UVA_Fun_FactsTests.m */; };
+		D0AFD4EE19BDF3EB00D0716B /* UFFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AFD4EC19BDF3EB00D0716B /* UFFHomeViewController.m */; };
+		D0AFD4EF19BDF3EB00D0716B /* UFFHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0AFD4ED19BDF3EB00D0716B /* UFFHomeViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0AFD4D919BDF18200D0716B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0AFD4B119BDF18100D0716B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0AFD4B819BDF18100D0716B;
+			remoteInfo = "UVA Fun Facts";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D0AFD4B919BDF18100D0716B /* UVA Fun Facts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UVA Fun Facts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0AFD4BC19BDF18100D0716B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D0AFD4BE19BDF18100D0716B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D0AFD4C019BDF18100D0716B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D0AFD4C419BDF18100D0716B /* UVA Fun Facts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UVA Fun Facts-Info.plist"; sourceTree = "<group>"; };
+		D0AFD4C619BDF18100D0716B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D0AFD4C819BDF18100D0716B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0AFD4CA19BDF18100D0716B /* UVA Fun Facts-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UVA Fun Facts-Prefix.pch"; sourceTree = "<group>"; };
+		D0AFD4CB19BDF18100D0716B /* UFFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UFFAppDelegate.h; sourceTree = "<group>"; };
+		D0AFD4CC19BDF18100D0716B /* UFFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UFFAppDelegate.m; sourceTree = "<group>"; };
+		D0AFD4CE19BDF18100D0716B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D0AFD4D419BDF18200D0716B /* UVA Fun FactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UVA Fun FactsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0AFD4D519BDF18200D0716B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D0AFD4DD19BDF18200D0716B /* UVA Fun FactsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UVA Fun FactsTests-Info.plist"; sourceTree = "<group>"; };
+		D0AFD4DF19BDF18200D0716B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D0AFD4E119BDF18200D0716B /* UVA_Fun_FactsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UVA_Fun_FactsTests.m; sourceTree = "<group>"; };
+		D0AFD4EB19BDF3EB00D0716B /* UFFHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UFFHomeViewController.h; sourceTree = "<group>"; };
+		D0AFD4EC19BDF3EB00D0716B /* UFFHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UFFHomeViewController.m; sourceTree = "<group>"; };
+		D0AFD4ED19BDF3EB00D0716B /* UFFHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UFFHomeViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0AFD4B619BDF18100D0716B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0AFD4BF19BDF18100D0716B /* CoreGraphics.framework in Frameworks */,
+				D0AFD4C119BDF18100D0716B /* UIKit.framework in Frameworks */,
+				D0AFD4BD19BDF18100D0716B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0AFD4D119BDF18200D0716B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0AFD4D619BDF18200D0716B /* XCTest.framework in Frameworks */,
+				D0AFD4D819BDF18200D0716B /* UIKit.framework in Frameworks */,
+				D0AFD4D719BDF18200D0716B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0AFD4B019BDF18100D0716B = {
+			isa = PBXGroup;
+			children = (
+				D0AFD4C219BDF18100D0716B /* UVA Fun Facts */,
+				D0AFD4DB19BDF18200D0716B /* UVA Fun FactsTests */,
+				D0AFD4BB19BDF18100D0716B /* Frameworks */,
+				D0AFD4BA19BDF18100D0716B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0AFD4BA19BDF18100D0716B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0AFD4B919BDF18100D0716B /* UVA Fun Facts.app */,
+				D0AFD4D419BDF18200D0716B /* UVA Fun FactsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0AFD4BB19BDF18100D0716B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0AFD4BC19BDF18100D0716B /* Foundation.framework */,
+				D0AFD4BE19BDF18100D0716B /* CoreGraphics.framework */,
+				D0AFD4C019BDF18100D0716B /* UIKit.framework */,
+				D0AFD4D519BDF18200D0716B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0AFD4C219BDF18100D0716B /* UVA Fun Facts */ = {
+			isa = PBXGroup;
+			children = (
+				D0AFD4CB19BDF18100D0716B /* UFFAppDelegate.h */,
+				D0AFD4CC19BDF18100D0716B /* UFFAppDelegate.m */,
+				D0AFD4EB19BDF3EB00D0716B /* UFFHomeViewController.h */,
+				D0AFD4EC19BDF3EB00D0716B /* UFFHomeViewController.m */,
+				D0AFD4ED19BDF3EB00D0716B /* UFFHomeViewController.xib */,
+				D0AFD4CE19BDF18100D0716B /* Images.xcassets */,
+				D0AFD4C319BDF18100D0716B /* Supporting Files */,
+			);
+			path = "UVA Fun Facts";
+			sourceTree = "<group>";
+		};
+		D0AFD4C319BDF18100D0716B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0AFD4C419BDF18100D0716B /* UVA Fun Facts-Info.plist */,
+				D0AFD4C519BDF18100D0716B /* InfoPlist.strings */,
+				D0AFD4C819BDF18100D0716B /* main.m */,
+				D0AFD4CA19BDF18100D0716B /* UVA Fun Facts-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0AFD4DB19BDF18200D0716B /* UVA Fun FactsTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0AFD4E119BDF18200D0716B /* UVA_Fun_FactsTests.m */,
+				D0AFD4DC19BDF18200D0716B /* Supporting Files */,
+			);
+			path = "UVA Fun FactsTests";
+			sourceTree = "<group>";
+		};
+		D0AFD4DC19BDF18200D0716B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0AFD4DD19BDF18200D0716B /* UVA Fun FactsTests-Info.plist */,
+				D0AFD4DE19BDF18200D0716B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0AFD4B819BDF18100D0716B /* UVA Fun Facts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0AFD4E519BDF18200D0716B /* Build configuration list for PBXNativeTarget "UVA Fun Facts" */;
+			buildPhases = (
+				D0AFD4B519BDF18100D0716B /* Sources */,
+				D0AFD4B619BDF18100D0716B /* Frameworks */,
+				D0AFD4B719BDF18100D0716B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UVA Fun Facts";
+			productName = "UVA Fun Facts";
+			productReference = D0AFD4B919BDF18100D0716B /* UVA Fun Facts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0AFD4D319BDF18200D0716B /* UVA Fun FactsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0AFD4E819BDF18200D0716B /* Build configuration list for PBXNativeTarget "UVA Fun FactsTests" */;
+			buildPhases = (
+				D0AFD4D019BDF18200D0716B /* Sources */,
+				D0AFD4D119BDF18200D0716B /* Frameworks */,
+				D0AFD4D219BDF18200D0716B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0AFD4DA19BDF18200D0716B /* PBXTargetDependency */,
+			);
+			name = "UVA Fun FactsTests";
+			productName = "UVA Fun FactsTests";
+			productReference = D0AFD4D419BDF18200D0716B /* UVA Fun FactsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0AFD4B119BDF18100D0716B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = UFF;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = hooapps;
+				TargetAttributes = {
+					D0AFD4D319BDF18200D0716B = {
+						TestTargetID = D0AFD4B819BDF18100D0716B;
+					};
+				};
+			};
+			buildConfigurationList = D0AFD4B419BDF18100D0716B /* Build configuration list for PBXProject "UVA Fun Facts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D0AFD4B019BDF18100D0716B;
+			productRefGroup = D0AFD4BA19BDF18100D0716B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0AFD4B819BDF18100D0716B /* UVA Fun Facts */,
+				D0AFD4D319BDF18200D0716B /* UVA Fun FactsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0AFD4B719BDF18100D0716B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0AFD4C719BDF18100D0716B /* InfoPlist.strings in Resources */,
+				D0AFD4CF19BDF18100D0716B /* Images.xcassets in Resources */,
+				D0AFD4EF19BDF3EB00D0716B /* UFFHomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0AFD4D219BDF18200D0716B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0AFD4E019BDF18200D0716B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0AFD4B519BDF18100D0716B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0AFD4CD19BDF18100D0716B /* UFFAppDelegate.m in Sources */,
+				D0AFD4EE19BDF3EB00D0716B /* UFFHomeViewController.m in Sources */,
+				D0AFD4C919BDF18100D0716B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0AFD4D019BDF18200D0716B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0AFD4E219BDF18200D0716B /* UVA_Fun_FactsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0AFD4DA19BDF18200D0716B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0AFD4B819BDF18100D0716B /* UVA Fun Facts */;
+			targetProxy = D0AFD4D919BDF18200D0716B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0AFD4C519BDF18100D0716B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0AFD4C619BDF18100D0716B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D0AFD4DE19BDF18200D0716B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0AFD4DF19BDF18200D0716B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0AFD4E319BDF18200D0716B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D0AFD4E419BDF18200D0716B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0AFD4E619BDF18200D0716B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UVA Fun Facts/UVA Fun Facts-Prefix.pch";
+				INFOPLIST_FILE = "UVA Fun Facts/UVA Fun Facts-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D0AFD4E719BDF18200D0716B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UVA Fun Facts/UVA Fun Facts-Prefix.pch";
+				INFOPLIST_FILE = "UVA Fun Facts/UVA Fun Facts-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D0AFD4E919BDF18200D0716B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UVA Fun Facts.app/UVA Fun Facts";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UVA Fun Facts/UVA Fun Facts-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "UVA Fun FactsTests/UVA Fun FactsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D0AFD4EA19BDF18200D0716B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UVA Fun Facts.app/UVA Fun Facts";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UVA Fun Facts/UVA Fun Facts-Prefix.pch";
+				INFOPLIST_FILE = "UVA Fun FactsTests/UVA Fun FactsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0AFD4B419BDF18100D0716B /* Build configuration list for PBXProject "UVA Fun Facts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0AFD4E319BDF18200D0716B /* Debug */,
+				D0AFD4E419BDF18200D0716B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0AFD4E519BDF18200D0716B /* Build configuration list for PBXNativeTarget "UVA Fun Facts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0AFD4E619BDF18200D0716B /* Debug */,
+				D0AFD4E719BDF18200D0716B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D0AFD4E819BDF18200D0716B /* Build configuration list for PBXNativeTarget "UVA Fun FactsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0AFD4E919BDF18200D0716B /* Debug */,
+				D0AFD4EA19BDF18200D0716B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0AFD4B119BDF18100D0716B /* Project object */;
+}
