@@ -34,6 +34,9 @@
     
     [_playTypeControl setSelectedSegmentIndex:0];
     
+    [_nameField setDelegate:self];
+    [_descriptionField setDelegate:self];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -62,6 +65,14 @@
 }
 
 
+#pragma mark - UITextFieldDelegate Methods
+
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
 
 /*
 #pragma mark - Navigation

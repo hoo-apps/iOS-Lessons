@@ -14,13 +14,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="TnC-GN-4wL">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="TnC-GN-4wL">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TnC-GN-4wL" id="hbF-FT-Zo5">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="VSJ-qZ-bcW" kind="showDetail" identifier="MasterToDetail" id="W7m-K8-QX2"/>
+                                    <segue destination="VSJ-qZ-bcW" kind="show" identifier="MasterToDetail" id="W7m-K8-QX2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -172,7 +172,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQW-0k-sG9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQW-0k-sG9">
                                 <rect key="frame" x="16" y="62" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -186,6 +186,7 @@
                             <constraint firstItem="uQW-0k-sG9" firstAttribute="trailing" secondItem="fo5-o1-6iX" secondAttribute="trailingMargin" id="j5T-jP-4ad"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="09O-nh-IZW"/>
                     <connections>
                         <outlet property="playDetails" destination="uQW-0k-sG9" id="wIo-L5-smy"/>
                     </connections>

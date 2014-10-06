@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HOOAddPlayViewController : UIViewController
+@interface HOOAddPlayViewController : UIViewController <UITextFieldDelegate>
 
 @property (nonatomic, strong) IBOutlet UITextField *nameField;
 @property (nonatomic, strong) IBOutlet UITextField *descriptionField;
