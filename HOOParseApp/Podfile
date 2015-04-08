@@ -1,0 +1,13 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+
+target 'HOOParseApp' do
+
+pod 'Parse', '~> 1.7'
+
+end
+
+target 'HOOParseAppTests' do
+
+end
+

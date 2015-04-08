@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Igk-Oo-4BS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Upload-->
+        <scene sceneID="SUj-qB-ee1">
+            <objects>
+                <viewController id="tOB-1h-Qoh" customClass="HOOUploadPersonController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sT6-dD-Moi"/>
+                        <viewControllerLayoutGuide type="bottom" id="3KS-ch-QRC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ze7-Ic-Cka">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXT-t9-wsZ">
+                                <rect key="frame" x="16" y="428" width="288" height="46"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="4l6-VS-SJ5"/>
+                                </constraints>
+                                <state key="normal" title="Upload">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadNewPerson:" destination="tOB-1h-Qoh" eventType="touchUpInside" id="J1D-nt-3F2"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qnS-bu-MIC">
+                                <rect key="frame" x="16" y="52" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="T56-91-fFH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8nF-4F-1YT">
+                                <rect key="frame" x="16" y="90" width="288" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="qs2-FO-O9R"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eeu-Nm-aKC">
+                                <rect key="frame" x="16" y="313" width="288" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="idV-TF-mgL"/>
+                                </constraints>
+                                <state key="normal" title="Attach Photo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickImage:" destination="tOB-1h-Qoh" eventType="touchUpInside" id="3wr-A5-Jc7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qnS-bu-MIC" firstAttribute="leading" secondItem="ze7-Ic-Cka" secondAttribute="leadingMargin" id="87H-q1-Kd1"/>
+                            <constraint firstItem="3KS-ch-QRC" firstAttribute="top" secondItem="hXT-t9-wsZ" secondAttribute="bottom" constant="45" id="9sD-IM-JSo"/>
+                            <constraint firstItem="Eeu-Nm-aKC" firstAttribute="trailing" secondItem="ze7-Ic-Cka" secondAttribute="trailingMargin" id="FEx-Iw-Rv2"/>
+                            <constraint firstItem="Eeu-Nm-aKC" firstAttribute="leading" secondItem="ze7-Ic-Cka" secondAttribute="leadingMargin" id="TL7-M8-He0"/>
+                            <constraint firstItem="8nF-4F-1YT" firstAttribute="trailing" secondItem="ze7-Ic-Cka" secondAttribute="trailingMargin" id="Xxh-KH-cDj"/>
+                            <constraint firstItem="8nF-4F-1YT" firstAttribute="leading" secondItem="ze7-Ic-Cka" secondAttribute="leadingMargin" id="akT-PT-VKS"/>
+                            <constraint firstItem="8nF-4F-1YT" firstAttribute="top" secondItem="qnS-bu-MIC" secondAttribute="bottom" constant="8" id="cZx-jY-oMu"/>
+                            <constraint firstItem="qnS-bu-MIC" firstAttribute="trailing" secondItem="ze7-Ic-Cka" secondAttribute="trailingMargin" id="p7i-gk-gVu"/>
+                            <constraint firstItem="hXT-t9-wsZ" firstAttribute="leading" secondItem="ze7-Ic-Cka" secondAttribute="leadingMargin" id="q1T-yH-AfX"/>
+                            <constraint firstItem="hXT-t9-wsZ" firstAttribute="trailing" secondItem="ze7-Ic-Cka" secondAttribute="trailingMargin" id="td8-cU-Z8P"/>
+                            <constraint firstItem="qnS-bu-MIC" firstAttribute="top" secondItem="sT6-dD-Moi" secondAttribute="bottom" constant="32" id="xoU-An-o2y"/>
+                            <constraint firstItem="Eeu-Nm-aKC" firstAttribute="top" secondItem="8nF-4F-1YT" secondAttribute="bottom" constant="8" id="zFc-Nh-lTH"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Upload" id="GIR-uG-CLo"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageField" destination="8nF-4F-1YT" id="kw9-Wh-EOl"/>
+                        <outlet property="nameField" destination="qnS-bu-MIC" id="37B-sO-YMr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p5l-Af-GVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6" y="669"/>
+        </scene>
+        <!--Guess-->
+        <scene sceneID="xoT-bM-eUt">
+            <objects>
+                <viewController id="zp4-Ih-yjm" customClass="HOOGuessPersonController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g3y-Sd-u6x"/>
+                        <viewControllerLayoutGuide type="bottom" id="JgH-xB-SZk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FtK-cF-h1G">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiC-BS-XaA">
+                                <rect key="frame" x="16" y="440" width="288" height="54"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="zxh-4O-QTn"/>
+                                </constraints>
+                                <state key="normal" title="New Face">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadNewFace:" destination="zp4-Ih-yjm" eventType="touchUpInside" id="BcJ-dY-oFJ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9ku-Ce-4WF">
+                                <rect key="frame" x="16" y="53" width="288" height="229"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="229" id="cA0-Ur-JWv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCM-tj-ZCi">
+                                <rect key="frame" x="16" y="290" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="qpn-kU-EuT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NCM-tj-ZCi" firstAttribute="top" secondItem="9ku-Ce-4WF" secondAttribute="bottom" constant="8" id="660-9p-MlQ"/>
+                            <constraint firstItem="NCM-tj-ZCi" firstAttribute="trailing" secondItem="FtK-cF-h1G" secondAttribute="trailingMargin" id="6Tq-gk-63G"/>
+                            <constraint firstItem="9ku-Ce-4WF" firstAttribute="trailing" secondItem="FtK-cF-h1G" secondAttribute="trailingMargin" id="NuA-IS-dzW"/>
+                            <constraint firstItem="9ku-Ce-4WF" firstAttribute="leading" secondItem="FtK-cF-h1G" secondAttribute="leadingMargin" id="P3p-NB-KRO"/>
+                            <constraint firstItem="hiC-BS-XaA" firstAttribute="leading" secondItem="FtK-cF-h1G" secondAttribute="leadingMargin" id="UAy-WQ-f8r"/>
+                            <constraint firstItem="9ku-Ce-4WF" firstAttribute="top" secondItem="g3y-Sd-u6x" secondAttribute="bottom" constant="33" id="cNk-32-Av0"/>
+                            <constraint firstItem="JgH-xB-SZk" firstAttribute="top" secondItem="hiC-BS-XaA" secondAttribute="bottom" constant="25" id="q8V-AU-Yba"/>
+                            <constraint firstItem="hiC-BS-XaA" firstAttribute="trailing" secondItem="FtK-cF-h1G" secondAttribute="trailingMargin" id="rKC-hy-L84"/>
+                            <constraint firstItem="NCM-tj-ZCi" firstAttribute="leading" secondItem="FtK-cF-h1G" secondAttribute="leadingMargin" id="y9q-QO-Zq8"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Guess" id="WlO-9j-ZnX"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="faceImage" destination="9ku-Ce-4WF" id="sbi-yG-gCa"/>
+                        <outlet property="nameLabel" destination="NCM-tj-ZCi" id="GxJ-f0-4z8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FpN-57-zd4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6" y="44"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="gCP-Hh-Qvb">
+            <objects>
+                <tabBarController id="Igk-Oo-4BS" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="3O7-zw-CiV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="zp4-Ih-yjm" kind="relationship" relationship="viewControllers" id="Jcb-gU-PFb"/>
+                        <segue destination="tOB-1h-Qoh" kind="relationship" relationship="viewControllers" id="WSB-fE-X4g"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zAu-Pm-ixZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-464" y="366"/>
+        </scene>
+    </scenes>
+</document>

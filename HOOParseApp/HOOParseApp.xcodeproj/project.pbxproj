@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5734FAA099344E0D40C2318B /* libPods-HOOParseApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73DF366B2C77BE1B26438A1D /* libPods-HOOParseApp.a */; };
+		D0EF8A3B1AD5E46E003C9383 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EF8A3A1AD5E46E003C9383 /* main.m */; };
+		D0EF8A3E1AD5E46E003C9383 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EF8A3D1AD5E46E003C9383 /* AppDelegate.m */; };
+		D0EF8A441AD5E46E003C9383 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0EF8A421AD5E46E003C9383 /* Main.storyboard */; };
+		D0EF8A461AD5E46E003C9383 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0EF8A451AD5E46E003C9383 /* Images.xcassets */; };
+		D0EF8A491AD5E46E003C9383 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0EF8A471AD5E46E003C9383 /* LaunchScreen.xib */; };
+		D0EF8A551AD5E46E003C9383 /* HOOParseAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EF8A541AD5E46E003C9383 /* HOOParseAppTests.m */; };
+		D0EF8A611AD5E962003C9383 /* HOOUploadPersonController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EF8A601AD5E962003C9383 /* HOOUploadPersonController.m */; };
+		D0EF8A641AD5E973003C9383 /* HOOGuessPersonController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EF8A631AD5E973003C9383 /* HOOGuessPersonController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0EF8A4F1AD5E46E003C9383 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0EF8A2D1AD5E46E003C9383 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0EF8A341AD5E46E003C9383;
+			remoteInfo = HOOParseApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08C12801AFA7A0FB41CC5302 /* Pods-HOOParseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOOParseApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HOOParseApp/Pods-HOOParseApp.debug.xcconfig"; sourceTree = "<group>"; };
+		73DF366B2C77BE1B26438A1D /* libPods-HOOParseApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HOOParseApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F7715B29EE9A2A017183746 /* Pods-HOOParseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOOParseApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HOOParseApp/Pods-HOOParseApp.release.xcconfig"; sourceTree = "<group>"; };
+		D0EF8A351AD5E46E003C9383 /* HOOParseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HOOParseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0EF8A391AD5E46E003C9383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0EF8A3A1AD5E46E003C9383 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0EF8A3C1AD5E46E003C9383 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D0EF8A3D1AD5E46E003C9383 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D0EF8A431AD5E46E003C9383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0EF8A451AD5E46E003C9383 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D0EF8A481AD5E46E003C9383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D0EF8A4E1AD5E46E003C9383 /* HOOParseAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HOOParseAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0EF8A531AD5E46E003C9383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0EF8A541AD5E46E003C9383 /* HOOParseAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HOOParseAppTests.m; sourceTree = "<group>"; };
+		D0EF8A5F1AD5E962003C9383 /* HOOUploadPersonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HOOUploadPersonController.h; sourceTree = "<group>"; };
+		D0EF8A601AD5E962003C9383 /* HOOUploadPersonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HOOUploadPersonController.m; sourceTree = "<group>"; };
+		D0EF8A621AD5E973003C9383 /* HOOGuessPersonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HOOGuessPersonController.h; sourceTree = "<group>"; };
+		D0EF8A631AD5E973003C9383 /* HOOGuessPersonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HOOGuessPersonController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0EF8A321AD5E46E003C9383 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5734FAA099344E0D40C2318B /* libPods-HOOParseApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0EF8A4B1AD5E46E003C9383 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		519B2946F36E395851666859 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73DF366B2C77BE1B26438A1D /* libPods-HOOParseApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E7DB612F4DB5DFE86FD1E71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08C12801AFA7A0FB41CC5302 /* Pods-HOOParseApp.debug.xcconfig */,
+				8F7715B29EE9A2A017183746 /* Pods-HOOParseApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D0EF8A2C1AD5E46E003C9383 = {
+			isa = PBXGroup;
+			children = (
+				D0EF8A371AD5E46E003C9383 /* HOOParseApp */,
+				D0EF8A511AD5E46E003C9383 /* HOOParseAppTests */,
+				D0EF8A361AD5E46E003C9383 /* Products */,
+				6E7DB612F4DB5DFE86FD1E71 /* Pods */,
+				519B2946F36E395851666859 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D0EF8A361AD5E46E003C9383 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0EF8A351AD5E46E003C9383 /* HOOParseApp.app */,
+				D0EF8A4E1AD5E46E003C9383 /* HOOParseAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0EF8A371AD5E46E003C9383 /* HOOParseApp */ = {
+			isa = PBXGroup;
+			children = (
+				D0EF8A5E1AD5E895003C9383 /* Delegate */,
+				D0EF8A651AD5E97D003C9383 /* Storyboard */,
+				D0EF8A661AD5E984003C9383 /* UploadController */,
+				D0EF8A671AD5E996003C9383 /* GuessController */,
+				D0EF8A451AD5E46E003C9383 /* Images.xcassets */,
+				D0EF8A471AD5E46E003C9383 /* LaunchScreen.xib */,
+				D0EF8A381AD5E46E003C9383 /* Supporting Files */,
+			);
+			path = HOOParseApp;
+			sourceTree = "<group>";
+		};
+		D0EF8A381AD5E46E003C9383 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0EF8A391AD5E46E003C9383 /* Info.plist */,
+				D0EF8A3A1AD5E46E003C9383 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0EF8A511AD5E46E003C9383 /* HOOParseAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0EF8A541AD5E46E003C9383 /* HOOParseAppTests.m */,
+				D0EF8A521AD5E46E003C9383 /* Supporting Files */,
+			);
+			path = HOOParseAppTests;
+			sourceTree = "<group>";
+		};
+		D0EF8A521AD5E46E003C9383 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0EF8A531AD5E46E003C9383 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0EF8A5E1AD5E895003C9383 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				D0EF8A3C1AD5E46E003C9383 /* AppDelegate.h */,
+				D0EF8A3D1AD5E46E003C9383 /* AppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		D0EF8A651AD5E97D003C9383 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D0EF8A421AD5E46E003C9383 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		D0EF8A661AD5E984003C9383 /* UploadController */ = {
+			isa = PBXGroup;
+			children = (
+				D0EF8A5F1AD5E962003C9383 /* HOOUploadPersonController.h */,
+				D0EF8A601AD5E962003C9383 /* HOOUploadPersonController.m */,
+			);
+			name = UploadController;
+			sourceTree = "<group>";
+		};
+		D0EF8A671AD5E996003C9383 /* GuessController */ = {
+			isa = PBXGroup;
+			children = (
+				D0EF8A621AD5E973003C9383 /* HOOGuessPersonController.h */,
+				D0EF8A631AD5E973003C9383 /* HOOGuessPersonController.m */,
+			);
+			name = GuessController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0EF8A341AD5E46E003C9383 /* HOOParseApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0EF8A581AD5E46E003C9383 /* Build configuration list for PBXNativeTarget "HOOParseApp" */;
+			buildPhases = (
+				23A73ED54B99BB188C468461 /* Check Pods Manifest.lock */,
+				D0EF8A311AD5E46E003C9383 /* Sources */,
+				D0EF8A321AD5E46E003C9383 /* Frameworks */,
+				D0EF8A331AD5E46E003C9383 /* Resources */,
+				5176E4AC42DAA71AC7966791 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HOOParseApp;
+			productName = HOOParseApp;
+			productReference = D0EF8A351AD5E46E003C9383 /* HOOParseApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0EF8A4D1AD5E46E003C9383 /* HOOParseAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0EF8A5B1AD5E46E003C9383 /* Build configuration list for PBXNativeTarget "HOOParseAppTests" */;
+			buildPhases = (
+				D0EF8A4A1AD5E46E003C9383 /* Sources */,
+				D0EF8A4B1AD5E46E003C9383 /* Frameworks */,
+				D0EF8A4C1AD5E46E003C9383 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0EF8A501AD5E46E003C9383 /* PBXTargetDependency */,
+			);
+			name = HOOParseAppTests;
+			productName = HOOParseAppTests;
+			productReference = D0EF8A4E1AD5E46E003C9383 /* HOOParseAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0EF8A2D1AD5E46E003C9383 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Alex Ramey";
+				TargetAttributes = {
+					D0EF8A341AD5E46E003C9383 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					D0EF8A4D1AD5E46E003C9383 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = D0EF8A341AD5E46E003C9383;
+					};
+				};
+			};
+			buildConfigurationList = D0EF8A301AD5E46E003C9383 /* Build configuration list for PBXProject "HOOParseApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0EF8A2C1AD5E46E003C9383;
+			productRefGroup = D0EF8A361AD5E46E003C9383 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0EF8A341AD5E46E003C9383 /* HOOParseApp */,
+				D0EF8A4D1AD5E46E003C9383 /* HOOParseAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0EF8A331AD5E46E003C9383 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0EF8A441AD5E46E003C9383 /* Main.storyboard in Resources */,
+				D0EF8A491AD5E46E003C9383 /* LaunchScreen.xib in Resources */,
+				D0EF8A461AD5E46E003C9383 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0EF8A4C1AD5E46E003C9383 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23A73ED54B99BB188C468461 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5176E4AC42DAA71AC7966791 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HOOParseApp/Pods-HOOParseApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0EF8A311AD5E46E003C9383 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0EF8A611AD5E962003C9383 /* HOOUploadPersonController.m in Sources */,
+				D0EF8A641AD5E973003C9383 /* HOOGuessPersonController.m in Sources */,
+				D0EF8A3E1AD5E46E003C9383 /* AppDelegate.m in Sources */,
+				D0EF8A3B1AD5E46E003C9383 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0EF8A4A1AD5E46E003C9383 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0EF8A551AD5E46E003C9383 /* HOOParseAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0EF8A501AD5E46E003C9383 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0EF8A341AD5E46E003C9383 /* HOOParseApp */;
+			targetProxy = D0EF8A4F1AD5E46E003C9383 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0EF8A421AD5E46E003C9383 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0EF8A431AD5E46E003C9383 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0EF8A471AD5E46E003C9383 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0EF8A481AD5E46E003C9383 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0EF8A561AD5E46E003C9383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D0EF8A571AD5E46E003C9383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0EF8A591AD5E46E003C9383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08C12801AFA7A0FB41CC5302 /* Pods-HOOParseApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HOOParseApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D0EF8A5A1AD5E46E003C9383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F7715B29EE9A2A017183746 /* Pods-HOOParseApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HOOParseApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D0EF8A5C1AD5E46E003C9383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HOOParseAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HOOParseApp.app/HOOParseApp";
+			};
+			name = Debug;
+		};
+		D0EF8A5D1AD5E46E003C9383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HOOParseAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HOOParseApp.app/HOOParseApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0EF8A301AD5E46E003C9383 /* Build configuration list for PBXProject "HOOParseApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0EF8A561AD5E46E003C9383 /* Debug */,
+				D0EF8A571AD5E46E003C9383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0EF8A581AD5E46E003C9383 /* Build configuration list for PBXNativeTarget "HOOParseApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0EF8A591AD5E46E003C9383 /* Debug */,
+				D0EF8A5A1AD5E46E003C9383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0EF8A5B1AD5E46E003C9383 /* Build configuration list for PBXNativeTarget "HOOParseAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0EF8A5C1AD5E46E003C9383 /* Debug */,
+				D0EF8A5D1AD5E46E003C9383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0EF8A2D1AD5E46E003C9383 /* Project object */;
+}
