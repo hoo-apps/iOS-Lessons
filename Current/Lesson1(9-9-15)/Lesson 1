@@ -4,7 +4,7 @@ Lesson 1
 	- Talk about XCode (install on your own time if you haven't already)
 	
 	- Discuss Simulator / iPhone Deployment
-		-Demo
+		- Demo both
 
 	- Mention Apple Developer Program Membership
 		- You will need this to publish apps to the store or to deploy apps to a physical device. Otherwise, you may develop with the simulator for free.
@@ -13,6 +13,10 @@ Lesson 1
 		- I use Objective-C. They both get the job done. APIs are provided for both languages. Which language you choose doesn't change how you do things, just what your syntax looks like.
 
 	- Mention The Big Nerd Ranch Guide to iOS Programming
+		- I recommend buying the actual book at Barnes & Noble
+		- but this online version will also get the job done for free through UVA library:
+		
+		http://search.lib.virginia.edu/catalog/u6266133
 
 	- You have to have a Mac to do iOS development.
 
@@ -22,10 +26,10 @@ Lesson 1
 	https://github.com/hoo-apps/iOS-Lessons
 
 	You may access GitHub files in three ways:
-	1) Go to the website in a web browser and download files manually
+	1)  Go to the website in a web browser and download files manually
 		(this is not recommended but it will work)
 
-	2) Create a local repository on your PC and run command line
+	2)  Create a local repository on your PC and run command line
 		git commands to sync up your local version with the master branch
 
 		On Mac, open Terminal and type 'git'. If you see a list of commands, then you have git installed. If not, it should prompt you to install git. If it just prints an error, you can install git by installing the Xcode Command Line Tools or straight up through a binary installer. See Mac section of 
@@ -39,17 +43,25 @@ Lesson 1
 		This should create a folder called iOS-Lessons and populate it
 		with the files in the repository.
 
-		At any given moment, you may cd/ls into this iOS-Lessons folder and run 'git pull' to sync up with the master branch that I will be updating.
+		At any given moment, you may 'cd'/'ls' into this iOS-Lessons folder and run 'git pull' to sync up with the master branch that I will be updating.
 
-		Note, any of your own code should be kept outside of this iOS-Lessons folder unless you're okay with your code disappearing/being overwritten when you run 'git pull', which will make your folder identical to the online repo. You may work off of a base project by running 'git pull', then copying a folder containing an Xcode Project from your iOS-Lessons folder to anywhere else on your computer, then working on the project there. This way, it is protected from being altered by git.
+		Note: any of your own code should be kept outside of this iOS-Lessons folder unless you're okay with your code disappearing/being overwritten when you run 'git pull', which will make your folder identical to the online repo. You may work off of a base project by running 'git pull', then copying a folder containing an Xcode Project from your iOS-Lessons folder to anywhere else on your computer, then working on the project there. This way, it is protected from being altered by git.
 
-	3) Download an application to help you manage Git repositories. If you choose this route, I recommend using SourceTree.
+	3) Download an application to help you manage Git repositories. If you choose this route, I recommend using SourceTree (it's free and good).
 
 		This is overkill for the purposes of this club, b/c you're only pulling. However, if you end up creating your own Git Repo and making commits/pushing/pulling, SourceTree is nice to have. It makes the process more visual than command line.
 
-	-Demo
+	- Demo of option 2) and option 3)
 
 3. Name Game
 	-Today, we will begin from scratch on the name game. Follow along and
 	we'll see how far we get. I will post a snapshot of the code after the lesson is complete.
+
+	Topics Introduced:
+		1. Project Set Up
+		2. View Conrollers and Model-View-Controller(-Store) Design Pattern
+		3. Storyboards
+		4. UIAlertView!
+
+
 
