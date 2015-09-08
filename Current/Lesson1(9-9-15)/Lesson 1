@@ -1,0 +1,36 @@
+Lesson 1
+
+1. Set up development environment.
+	- Talk about XCode (install on your own time if you haven't already)
+	
+	- Discuss Simulator / iPhone Deployment
+		-Demo
+
+	- Mention Apple Developer Program Membership
+		- You will need this to publish apps to the store or to deploy apps to a physical device. Otherwise, you may develop with the simulator for free.
+
+	- Talk about Objective-C vs. Swift.
+		- I use Objective-C. They both get the job done. APIs are provided for both languages. Which language you choose doesn't change how you do things, just what your syntax looks like.
+
+	- Mention The Big Nerd Ranch Guide to iOS Programming 
+
+2. GitHub
+	- Our repo is:
+
+	https://github.com/hoo-apps/iOS-Lessons
+
+	- Look in Current Folder for lessons
+
+	You may access GitHub files in three ways:
+	1) Go to the website in a web browser and download files manually
+		(this is not recommended but it will work)
+	2) Create a local repository on your PC and run command line
+		git commands to sync up your local version with the master branch
+	3) Download an application to help you manage Git repositories. If you choose this route, I recommend using SourceTree.
+
+	-Demo
+
+3. Name Game
+	-Today, we will begin from scratch on the name game. Follow along and
+	we'll see how far we get. I will post a snapshot of the code after the lesson is complete.
+
