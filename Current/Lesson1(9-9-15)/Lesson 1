@@ -1,5 +1,5 @@
 Lesson 1
-
+$$$$$$
 1. Set up development environment.
 	- Talk about XCode (install on your own time if you haven't already)
 	
@@ -9,7 +9,7 @@ Lesson 1
 	- Mention Apple Developer Program Membership
 		- You will need this to publish apps to the store or to deploy apps to a physical device. Otherwise, you may develop with the simulator for free.
 
-	- Talk about Objective-C vs. Swift.
+	- Talk about Objective-C vs. Swift. We will use Swift in this club.
 		- I use Objective-C. They both get the job done. APIs are provided for both languages. Which language you choose doesn't change how you do things, just what your syntax looks like.
 
 	- Mention The Big Nerd Ranch Guide to iOS Programming
