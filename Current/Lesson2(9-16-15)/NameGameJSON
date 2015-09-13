@@ -1,0 +1,45 @@
+{
+  "data": 
+  [
+  	{
+  		"name" : "Tarum Saharya",
+  		"compID" : "ts4pe",
+  		"funFact" : "Knows some Japanese"
+  	},
+  	{
+  		"name" : "Emma Fass",
+  		"compID" : "enf5cb",
+  		"funFact" : "Not fun"
+  	},
+  	{
+  		"name" : "Adama Walters",
+  		"compID" : "alw5jc",
+  		"funFact" : "Born in Africa"
+  	},
+  	{
+  		"name" : "Yiming Wang",
+  		"compID" : "yw5hn",
+  		"funFact" : "A funny Chinese name"
+  	},
+  	{
+  		"name" : "Calum Smeaton",
+  		"compID" : "cws5av",
+  		"funFact" : "An aspiring gangster rap producer yo"
+  	},
+  	{
+  		"name" : "Sohum Sontakke",
+  		"compID" : "sms9xj",
+  		"funFact" : "He can move his ears in 3D"
+  	},
+  	{
+  		"name" : "Amar Singh",
+  		"compID" : "ars9he",
+  		"funFact" : "No cartilage in left knee"
+  	},
+  	{
+  		"name" : "Alex Ramey",
+  		"compID" : "abr8xq",
+  		"funFact" : "Can solve a Rubik's cube in under two minutes"
+  	}
+  ]
+}

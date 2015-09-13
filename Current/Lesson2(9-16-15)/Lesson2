@@ -1,0 +1,12 @@
+This lesson is 0-60mph. Get a good grip and hold on.
+
+Topics:
+1) TabBarController, NavigationBarController
+2) Model-View-Controller-Store design pattern
+3) Model objects and NSKeyedArchiving for data persistence
+4) User Interface Layout
+5) Tips and Tricks along the way
+
+1. SetUp
+	Create New Swift Project
+	
