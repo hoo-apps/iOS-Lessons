@@ -1,4 +1,4 @@
-This lesson is 0-60mph. Get a good grip and hold on.
+Lesson2 --> Go over NameGame code and then add tweaks/features as time allows. Talk about Swift.
 
 Topics:
 1) TabBarController, NavigationBarController
@@ -7,6 +7,38 @@ Topics:
 4) User Interface Layout
 5) Tips and Tricks along the way
 
-1. SetUp
+How this project got started:
+
+1. SetUp UI Architecture (Featuring Tab Bar Controller and Navigation Controller)
 	Create New Swift Project
 	
+	Set up Storyboard with Initial View Controller as Tab Bar Controller
+	
+	Drop in two navigation controllers and hook up to tab bar controller, giving it two tabs.
+	(Note hold control and click drag from tab bar controller to nav controller, then establish
+	the relationship segue connection called 'view controllers' to add a tab)
+
+	Verify that each nav controller has a root view controller. Delete the auto-generated root-view
+	controllers and drop in two generic View Controllers, attaching them to nav controllers as root
+	view controllers. (Again control and click drag from nav controller to root view controller to 
+	establish the relationship segue called root view controller) 
+
+	Create a 'show' transition to a detail view controller (drop in another generic view 
+	controller, control click drag from master to detail) for the second root view controller.
+
+	Click on this transition (called a segue) and name it 'GameToResults' so we can reference
+	it in our code.
+
+	Name Tab 1 "Game" and Tab 2 "Stats"
+	
+	Test to verify working UI flow with simulator or on device
+
+2. Create HOOGameViewController, HOOResultsViewController, HOOStatsViewController files
+(New>File>Cocoa Touch Class> Inherit from ViewController>Language = Swift)
+
+In storyboard, link each view controller by clicking on yellow circle and typing in the 
+appropriate class in the class text box under the identity inspector (3rd icon on right drawer)
+
+3. Create HOOPlayer, HOOPerson, and HOODataStore files (same as above except inherit from NSObject)
+
+4. See code for NameGame to see how it progressed from here . . .
