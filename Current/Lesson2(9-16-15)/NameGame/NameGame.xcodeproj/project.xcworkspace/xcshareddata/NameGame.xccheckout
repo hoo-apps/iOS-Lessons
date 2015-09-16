@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>85029BF1-1246-45DD-B1F5-CC34C894DF56</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NameGame</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D25935B59C98B8780EFD1AFF3AAE2DDC2BC76B24</key>
+		<string>https://github.com/hoo-apps/iOS-Lessons.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Current/Lesson2(9-16-15)/NameGame/NameGame.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D25935B59C98B8780EFD1AFF3AAE2DDC2BC76B24</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/hoo-apps/iOS-Lessons.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D25935B59C98B8780EFD1AFF3AAE2DDC2BC76B24</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D25935B59C98B8780EFD1AFF3AAE2DDC2BC76B24</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-Lessons</string>
+		</dict>
+	</array>
+</dict>
+</plist>
