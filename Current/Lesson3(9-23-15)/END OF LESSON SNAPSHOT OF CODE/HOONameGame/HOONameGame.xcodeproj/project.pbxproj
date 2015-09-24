@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D01703E21BAA4315005F4A45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01703E11BAA4315005F4A45 /* AppDelegate.swift */; };
+		D01703E71BAA4315005F4A45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D01703E51BAA4315005F4A45 /* Main.storyboard */; };
+		D01703E91BAA4315005F4A45 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01703E81BAA4315005F4A45 /* Images.xcassets */; };
+		D01703EC1BAA4315005F4A45 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D01703EA1BAA4315005F4A45 /* LaunchScreen.xib */; };
+		D01703F81BAA4315005F4A45 /* HOONameGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01703F71BAA4315005F4A45 /* HOONameGameTests.swift */; };
+		D01704021BAA43F4005F4A45 /* HOOPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01704011BAA43F4005F4A45 /* HOOPerson.swift */; };
+		D01704041BAA440E005F4A45 /* HOOPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01704031BAA440E005F4A45 /* HOOPlayer.swift */; };
+		D01704081BAA4483005F4A45 /* HOOGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01704071BAA4483005F4A45 /* HOOGameViewController.swift */; };
+		D017040A1BAA4495005F4A45 /* HOOResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01704091BAA4495005F4A45 /* HOOResultsViewController.swift */; };
+		D017040C1BAA44BC005F4A45 /* HOOStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D017040B1BAA44BC005F4A45 /* HOOStatsViewController.swift */; };
+		D017040F1BAA4507005F4A45 /* HOODataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D017040E1BAA4507005F4A45 /* HOODataStore.swift */; };
+		D0764DCA1BB386B5000AAABB /* NameGame.json in Resources */ = {isa = PBXBuildFile; fileRef = D0764DC91BB386B5000AAABB /* NameGame.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D01703F21BAA4315005F4A45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D01703D41BAA4315005F4A45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D01703DB1BAA4315005F4A45;
+			remoteInfo = HOONameGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D01703DC1BAA4315005F4A45 /* HOONameGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HOONameGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D01703E01BAA4315005F4A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D01703E11BAA4315005F4A45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D01703E61BAA4315005F4A45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D01703E81BAA4315005F4A45 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D01703EB1BAA4315005F4A45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D01703F11BAA4315005F4A45 /* HOONameGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HOONameGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D01703F61BAA4315005F4A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D01703F71BAA4315005F4A45 /* HOONameGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOONameGameTests.swift; sourceTree = "<group>"; };
+		D01704011BAA43F4005F4A45 /* HOOPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HOOPerson.swift; sourceTree = "<group>"; };
+		D01704031BAA440E005F4A45 /* HOOPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HOOPlayer.swift; sourceTree = "<group>"; };
+		D01704071BAA4483005F4A45 /* HOOGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HOOGameViewController.swift; sourceTree = "<group>"; };
+		D01704091BAA4495005F4A45 /* HOOResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HOOResultsViewController.swift; sourceTree = "<group>"; };
+		D017040B1BAA44BC005F4A45 /* HOOStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HOOStatsViewController.swift; sourceTree = "<group>"; };
+		D017040E1BAA4507005F4A45 /* HOODataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HOODataStore.swift; sourceTree = "<group>"; };
+		D0764DC91BB386B5000AAABB /* NameGame.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; path = NameGame.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D01703D91BAA4315005F4A45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D01703EE1BAA4315005F4A45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D01703D31BAA4315005F4A45 = {
+			isa = PBXGroup;
+			children = (
+				D01703DE1BAA4315005F4A45 /* HOONameGame */,
+				D01703F41BAA4315005F4A45 /* HOONameGameTests */,
+				D01703DD1BAA4315005F4A45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D01703DD1BAA4315005F4A45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D01703DC1BAA4315005F4A45 /* HOONameGame.app */,
+				D01703F11BAA4315005F4A45 /* HOONameGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D01703DE1BAA4315005F4A45 /* HOONameGame */ = {
+			isa = PBXGroup;
+			children = (
+				D01704101BAA450E005F4A45 /* Data Store */,
+				D017040D1BAA44C2005F4A45 /* View Controllers */,
+				D01704051BAA4423005F4A45 /* Models */,
+				D01704061BAA442E005F4A45 /* Delegate */,
+				D01704111BAA479E005F4A45 /* Storyboard */,
+				D01703E81BAA4315005F4A45 /* Images.xcassets */,
+				D01703EA1BAA4315005F4A45 /* LaunchScreen.xib */,
+				D01703DF1BAA4315005F4A45 /* Supporting Files */,
+			);
+			path = HOONameGame;
+			sourceTree = "<group>";
+		};
+		D01703DF1BAA4315005F4A45 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0764DC91BB386B5000AAABB /* NameGame.json */,
+				D01703E01BAA4315005F4A45 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D01703F41BAA4315005F4A45 /* HOONameGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				D01703F71BAA4315005F4A45 /* HOONameGameTests.swift */,
+				D01703F51BAA4315005F4A45 /* Supporting Files */,
+			);
+			path = HOONameGameTests;
+			sourceTree = "<group>";
+		};
+		D01703F51BAA4315005F4A45 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D01703F61BAA4315005F4A45 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D01704051BAA4423005F4A45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D01704011BAA43F4005F4A45 /* HOOPerson.swift */,
+				D01704031BAA440E005F4A45 /* HOOPlayer.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D01704061BAA442E005F4A45 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				D01703E11BAA4315005F4A45 /* AppDelegate.swift */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		D017040D1BAA44C2005F4A45 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D01704071BAA4483005F4A45 /* HOOGameViewController.swift */,
+				D01704091BAA4495005F4A45 /* HOOResultsViewController.swift */,
+				D017040B1BAA44BC005F4A45 /* HOOStatsViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D01704101BAA450E005F4A45 /* Data Store */ = {
+			isa = PBXGroup;
+			children = (
+				D017040E1BAA4507005F4A45 /* HOODataStore.swift */,
+			);
+			name = "Data Store";
+			sourceTree = "<group>";
+		};
+		D01704111BAA479E005F4A45 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D01703E51BAA4315005F4A45 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D01703DB1BAA4315005F4A45 /* HOONameGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D01703FB1BAA4315005F4A45 /* Build configuration list for PBXNativeTarget "HOONameGame" */;
+			buildPhases = (
+				D01703D81BAA4315005F4A45 /* Sources */,
+				D01703D91BAA4315005F4A45 /* Frameworks */,
+				D01703DA1BAA4315005F4A45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HOONameGame;
+			productName = HOONameGame;
+			productReference = D01703DC1BAA4315005F4A45 /* HOONameGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D01703F01BAA4315005F4A45 /* HOONameGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D01703FE1BAA4315005F4A45 /* Build configuration list for PBXNativeTarget "HOONameGameTests" */;
+			buildPhases = (
+				D01703ED1BAA4315005F4A45 /* Sources */,
+				D01703EE1BAA4315005F4A45 /* Frameworks */,
+				D01703EF1BAA4315005F4A45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D01703F31BAA4315005F4A45 /* PBXTargetDependency */,
+			);
+			name = HOONameGameTests;
+			productName = HOONameGameTests;
+			productReference = D01703F11BAA4315005F4A45 /* HOONameGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D01703D41BAA4315005F4A45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Alex Ramey";
+				TargetAttributes = {
+					D01703DB1BAA4315005F4A45 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					D01703F01BAA4315005F4A45 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = D01703DB1BAA4315005F4A45;
+					};
+				};
+			};
+			buildConfigurationList = D01703D71BAA4315005F4A45 /* Build configuration list for PBXProject "HOONameGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D01703D31BAA4315005F4A45;
+			productRefGroup = D01703DD1BAA4315005F4A45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D01703DB1BAA4315005F4A45 /* HOONameGame */,
+				D01703F01BAA4315005F4A45 /* HOONameGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D01703DA1BAA4315005F4A45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D01703E71BAA4315005F4A45 /* Main.storyboard in Resources */,
+				D0764DCA1BB386B5000AAABB /* NameGame.json in Resources */,
+				D01703EC1BAA4315005F4A45 /* LaunchScreen.xib in Resources */,
+				D01703E91BAA4315005F4A45 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D01703EF1BAA4315005F4A45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D01703D81BAA4315005F4A45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D017040F1BAA4507005F4A45 /* HOODataStore.swift in Sources */,
+				D01704041BAA440E005F4A45 /* HOOPlayer.swift in Sources */,
+				D017040C1BAA44BC005F4A45 /* HOOStatsViewController.swift in Sources */,
+				D01704081BAA4483005F4A45 /* HOOGameViewController.swift in Sources */,
+				D017040A1BAA4495005F4A45 /* HOOResultsViewController.swift in Sources */,
+				D01703E21BAA4315005F4A45 /* AppDelegate.swift in Sources */,
+				D01704021BAA43F4005F4A45 /* HOOPerson.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D01703ED1BAA4315005F4A45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D01703F81BAA4315005F4A45 /* HOONameGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D01703F31BAA4315005F4A45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D01703DB1BAA4315005F4A45 /* HOONameGame */;
+			targetProxy = D01703F21BAA4315005F4A45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D01703E51BAA4315005F4A45 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D01703E61BAA4315005F4A45 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D01703EA1BAA4315005F4A45 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D01703EB1BAA4315005F4A45 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D01703F91BAA4315005F4A45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D01703FA1BAA4315005F4A45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D01703FC1BAA4315005F4A45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HOONameGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D01703FD1BAA4315005F4A45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HOONameGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D01703FF1BAA4315005F4A45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HOONameGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HOONameGame.app/HOONameGame";
+			};
+			name = Debug;
+		};
+		D01704001BAA4315005F4A45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HOONameGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HOONameGame.app/HOONameGame";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D01703D71BAA4315005F4A45 /* Build configuration list for PBXProject "HOONameGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D01703F91BAA4315005F4A45 /* Debug */,
+				D01703FA1BAA4315005F4A45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D01703FB1BAA4315005F4A45 /* Build configuration list for PBXNativeTarget "HOONameGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D01703FC1BAA4315005F4A45 /* Debug */,
+				D01703FD1BAA4315005F4A45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D01703FE1BAA4315005F4A45 /* Build configuration list for PBXNativeTarget "HOONameGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D01703FF1BAA4315005F4A45 /* Debug */,
+				D01704001BAA4315005F4A45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D01703D41BAA4315005F4A45 /* Project object */;
+}
