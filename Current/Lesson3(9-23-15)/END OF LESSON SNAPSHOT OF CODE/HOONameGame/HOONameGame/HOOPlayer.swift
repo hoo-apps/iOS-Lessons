@@ -80,7 +80,7 @@ class HOOPlayer: NSObject, NSCoding {
     
     // Taking it out of the archive
     // Note: This is a designated initializer
-    required init(coder decoder: NSCoder)
+    required init?(coder decoder: NSCoder)
     {
         // 1. Set our properties
         self.playerID = decoder.decodeIntegerForKey(KEY_PLAYER_ID)

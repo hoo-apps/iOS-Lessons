@@ -27,7 +27,7 @@ class HOODataStore: NSObject{
         
         // Get our Players (Local user(s)) from NSUserDefaults
         // ? means it could be NULL or Nil or 0
-        var arrayOfPlayersData = NSUserDefaults.standardUserDefaults().objectForKey(PLAYERS_DEFAULTS_KEY) as? NSData
+        let arrayOfPlayersData = NSUserDefaults.standardUserDefaults().objectForKey(PLAYERS_DEFAULTS_KEY) as? NSData
         
         if (arrayOfPlayersData != nil)
         {
@@ -42,7 +42,7 @@ class HOODataStore: NSObject{
         if (players.count == 0)
         {
             // First time game is being played; Or defaults fetch failed.
-            var player = HOOPlayer(playerID: 1)
+            let player = HOOPlayer(playerID: 1)
             players.append(player)
         }
         
@@ -50,14 +50,9 @@ class HOODataStore: NSObject{
         let path = NSBundle.mainBundle().pathForResource("NameGame", ofType: "json")
         if (path != nil)
         {
-            if let jsonData = NSData(contentsOfFile: path!, options: NSDataReadingOptions.DataReadingMappedIfSafe, error: nil)
+            if let jsonData = try? NSData(contentsOfFile: path!, options: .DataReadingMappedIfSafe)
             {
-                var jsonError : NSError?
-                let decodedJson = NSJSONSerialization.JSONObjectWithData(jsonData, options: nil, error: &jsonError) as! Dictionary<String, Array<Dictionary<String, AnyObject>>>
-                
-                
-                /* No error occurred! */
-                if (jsonError == nil)
+                if let decodedJson = try? NSJSONSerialization.JSONObjectWithData(jsonData, options: []) as! Dictionary<String, Array<Dictionary<String, AnyObject>>>
                 {
                     if let peopleDictionaries:[Dictionary<String, AnyObject>] = decodedJson["data"]
                     {
@@ -66,11 +61,6 @@ class HOODataStore: NSObject{
                             people.append(HOOPerson(name: dict["name"] as? String, funFact: dict["funFact"] as? String, imageKey: dict["compID"] as? String, personID: dict["id"] as? Int))
                         }
                     }
-                }
-                else
-                {
-                    /* Must unwrap jsonError to get value */
-                    print(jsonError!)
                 }
             }
         }
@@ -90,7 +80,7 @@ class HOODataStore: NSObject{
         numItems is how many choices to get, excluded name is a name that may not appear
         in the results
     */
-    func getListOfPeopleContaining(#numItems : Int, excludedName:String) -> [HOOPerson]
+    func getListOfPeopleContaining(numItems numItems : Int, excludedName:String) -> [HOOPerson]
     {
         var allPeopleMinusExcludedPerson : [HOOPerson] = []
         
@@ -112,8 +102,8 @@ class HOODataStore: NSObject{
             
             while (result.count < numItems)
             {
-                var randomIndex = arc4random_uniform((UInt32)(allPeopleMinusExcludedPerson.count))
-                var randomPerson = allPeopleMinusExcludedPerson[(Int)(randomIndex)]
+                let randomIndex = arc4random_uniform((UInt32)(allPeopleMinusExcludedPerson.count))
+                let randomPerson = allPeopleMinusExcludedPerson[(Int)(randomIndex)]
                 var isPersonNotYetInResult = true
                 
                 for p in result
@@ -134,7 +124,7 @@ class HOODataStore: NSObject{
         }
     }
     
-    func getListOfPeopleContaining(#numItems: Int, unseenByUser user:HOOPlayer) -> [HOOPerson]
+    func getListOfPeopleContaining(numItems numItems: Int, unseenByUser user:HOOPlayer) -> [HOOPerson]
     {
         if (self.people.count - user.getPeopleSeen().count <= numItems)
         {
@@ -142,7 +132,7 @@ class HOODataStore: NSObject{
             
             for p in self.people
             {
-                if (!contains(user.getPeopleSeen(), p.getID()))
+                if (!user.getPeopleSeen().contains(p.getID()))
                 {
                     result.append(p)
                 }
@@ -156,7 +146,7 @@ class HOODataStore: NSObject{
             
             for p in self.people
             {
-                if (!contains(user.getPeopleSeen(), p.getID()))
+                if (!user.getPeopleSeen().contains(p.getID()))
                 {
                     allUnseenPeople.append(p)
                 }
@@ -166,8 +156,8 @@ class HOODataStore: NSObject{
             
             while (result.count < numItems)
             {
-                var randomIndex = arc4random_uniform((UInt32)(allUnseenPeople.count))
-                var randomPerson = allUnseenPeople[(Int)(randomIndex)]
+                let randomIndex = arc4random_uniform((UInt32)(allUnseenPeople.count))
+                let randomPerson = allUnseenPeople[(Int)(randomIndex)]
                 var isPersonNotYetInResult = true
                 
                 for p in result
@@ -190,7 +180,7 @@ class HOODataStore: NSObject{
     
     func saveGameData()
     {
-        var arrayOfPlayersData = NSKeyedArchiver.archivedDataWithRootObject(players)
+        let arrayOfPlayersData = NSKeyedArchiver.archivedDataWithRootObject(players)
         NSUserDefaults.standardUserDefaults().setObject(arrayOfPlayersData, forKey: PLAYERS_DEFAULTS_KEY)
     }
 }

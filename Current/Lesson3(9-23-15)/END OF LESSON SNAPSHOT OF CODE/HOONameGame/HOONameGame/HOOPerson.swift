@@ -39,7 +39,7 @@ class HOOPerson: NSObject {
     
     func getImage()->UIImage?{
         
-        var image = UIImage(named:imageKey)
+        let image = UIImage(named:imageKey)
         
         if (image != nil)
         {
