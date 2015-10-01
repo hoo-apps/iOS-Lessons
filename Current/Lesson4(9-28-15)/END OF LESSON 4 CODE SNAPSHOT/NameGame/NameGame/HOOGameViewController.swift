@@ -51,6 +51,8 @@ class HOOGameViewController: UIViewController {
                         alert.show()
                     }
                 })
+                
+                //this code is gonna start running immediately
             }
         }
     }

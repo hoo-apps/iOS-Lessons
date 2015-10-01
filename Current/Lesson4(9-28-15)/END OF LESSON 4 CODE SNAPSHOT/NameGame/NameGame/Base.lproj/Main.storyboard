@@ -54,20 +54,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GK-4t-4e6">
-                                <rect key="frame" x="225" y="550" width="150" height="30"/>
-                                <color key="backgroundColor" red="0.05930543907" green="0.1859394077" blue="0.61768574620000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="1Yo-KM-qqR"/>
-                                    <constraint firstAttribute="width" constant="150" id="gCL-ue-EaJ"/>
-                                </constraints>
-                                <state key="normal" title="Done">
-                                    <color key="titleColor" white="0.96969092150000002" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="doneSelected:" destination="Bep-di-Xhz" eventType="touchUpInside" id="pnw-b6-jRq"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LVS-pj-MYS">
                                 <rect key="frame" x="20" y="507" width="560" height="30"/>
                                 <constraints>
@@ -108,6 +94,20 @@
                                     <action selector="addPicSelected:" destination="Bep-di-Xhz" eventType="touchUpInside" id="eHs-9X-K1Z"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GK-4t-4e6">
+                                <rect key="frame" x="225" y="550" width="150" height="30"/>
+                                <color key="backgroundColor" red="0.05930543907" green="0.1859394077" blue="0.61768574620000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1Yo-KM-qqR"/>
+                                    <constraint firstAttribute="width" constant="150" id="gCL-ue-EaJ"/>
+                                </constraints>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="0.96969092150000002" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneSelected:" destination="Bep-di-Xhz" eventType="touchUpInside" id="pnw-b6-jRq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -130,6 +130,9 @@
                             <constraint firstItem="xPk-ja-rAj" firstAttribute="top" secondItem="p1r-Cq-tyl" secondAttribute="bottom" constant="13" id="pWJ-qJ-tB6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="picture" destination="ERK-8v-dda" id="d0p-Mo-ClA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gzk-Cj-say" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -237,13 +240,13 @@
                         <outlet property="option2" destination="r04-XS-L48" id="cmU-wY-Jw1"/>
                         <outlet property="option3" destination="0iX-Qt-hoG" id="fZK-y7-8Gj"/>
                         <outlet property="option4" destination="Qs6-Bj-bJP" id="OcJ-tv-Gna"/>
-                        <outlet property="picture" destination="Pie-vJ-g7e" id="814-NP-ZTL"/>
-                        <segue destination="ZVT-Mx-6TA" kind="show" identifier="GameToResults" id="I4Y-4R-jgm"/>
+                        <outlet property="picture" destination="Pie-vJ-g7e" id="bT7-UY-Vmn"/>
+                        <segue destination="ZVT-Mx-6TA" kind="show" identifier="GameToResults" id="Bv7-6M-h0C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gr9-XB-ytU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1335" y="-188"/>
+            <point key="canvasLocation" x="1361" y="-188"/>
         </scene>
         <!--Stats-->
         <scene sceneID="XV6-nv-hvF">
@@ -309,7 +312,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qCI-z9-MrK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1335" y="480"/>
+            <point key="canvasLocation" x="1372" y="480"/>
         </scene>
         <!--Answer-->
         <scene sceneID="nSe-sr-ASN">

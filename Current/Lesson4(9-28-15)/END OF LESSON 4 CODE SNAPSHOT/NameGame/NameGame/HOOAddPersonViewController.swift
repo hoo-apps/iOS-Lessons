@@ -8,13 +8,14 @@
 
 import UIKit
 
-class HOOAddPersonViewController: UIViewController {
+class HOOAddPersonViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
 
+    let imagePicker = UIImagePickerController()
     @IBOutlet weak var picture: UIImageView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.imagePicker.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -25,7 +26,9 @@ class HOOAddPersonViewController: UIViewController {
     
     @IBAction func addPicSelected(sender: UIButton)
     {
-        
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .PhotoLibrary
+        presentViewController(imagePicker, animated: true, completion: nil)
     }
     
     @IBAction func doneSelected(sender: UIButton)
@@ -33,6 +36,17 @@ class HOOAddPersonViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
+    
+    // MARK: - UIImagePickerControllerDelegate Methods
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            picture?.contentMode = .ScaleAspectFit
+            picture?.image = pickedImage
+        }
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -36,6 +36,8 @@ class HOOStatsViewController: UIViewController {
     {
         HOODataStore.sharedInstance.getFirstPlayer().reset()
         HOODataStore.sharedInstance.clearPeople()
+        
+        /*LEARNING OPPORTUNITY */
         if let navController = self.tabBarController?.viewControllers?.first as? UINavigationController
         {
             if let gameController = navController.viewControllers[0] as? HOOGameViewController
@@ -43,6 +45,8 @@ class HOOStatsViewController: UIViewController {
                 gameController.reset()
             }
         }
+        /*LEARNING OPPORTUNITY*/
+        
         self.viewWillAppear(true)
     }
 }
