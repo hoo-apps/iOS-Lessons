@@ -54,29 +54,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LVS-pj-MYS">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fun Fact" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LVS-pj-MYS">
                                 <rect key="frame" x="20" y="507" width="560" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="GSK-pj-IGh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Bep-di-Xhz" id="g0h-hm-TF4"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xPk-ja-rAj">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Computing ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xPk-ja-rAj">
                                 <rect key="frame" x="20" y="463" width="560" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="yg4-rQ-l64"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Bep-di-Xhz" id="UqR-Qg-8ub"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p1r-Cq-tyl">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p1r-Cq-tyl">
                                 <rect key="frame" x="20" y="420" width="560" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="tqz-dg-4wL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Bep-di-Xhz" id="Wnz-cc-5UR"/>
+                                </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ERK-8v-dda">
                                 <rect key="frame" x="20" y="28" width="560" height="334"/>
@@ -110,6 +119,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Nt7-4B-HBO" firstAttribute="top" secondItem="ERK-8v-dda" secondAttribute="bottom" constant="14" id="45C-aU-mX3"/>
                             <constraint firstItem="LVS-pj-MYS" firstAttribute="top" secondItem="xPk-ja-rAj" secondAttribute="bottom" constant="14" id="Huz-HY-rbw"/>
@@ -129,12 +139,23 @@
                             <constraint firstItem="ERK-8v-dda" firstAttribute="top" secondItem="XVX-Ld-9A7" secondAttribute="bottom" constant="8" id="kgt-1W-iNo"/>
                             <constraint firstItem="xPk-ja-rAj" firstAttribute="top" secondItem="p1r-Cq-tyl" secondAttribute="bottom" constant="13" id="pWJ-qJ-tB6"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="yAO-9q-K2J" appends="YES" id="zUS-Ay-eem"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="compIDInput" destination="xPk-ja-rAj" id="1kc-uZ-Bqd"/>
+                        <outlet property="funFactInput" destination="LVS-pj-MYS" id="3mU-Sy-oRB"/>
+                        <outlet property="nameInput" destination="p1r-Cq-tyl" id="pea-bq-dXa"/>
                         <outlet property="picture" destination="ERK-8v-dda" id="d0p-Mo-ClA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gzk-Cj-say" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="yAO-9q-K2J">
+                    <connections>
+                        <action selector="tapReceived:" destination="Bep-di-Xhz" id="z7A-5Z-lmp"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1994" y="-847"/>
         </scene>
