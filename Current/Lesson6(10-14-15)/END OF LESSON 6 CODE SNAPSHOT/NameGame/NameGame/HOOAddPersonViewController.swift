@@ -165,10 +165,6 @@ class HOOAddPersonViewController : UIViewController, UIImagePickerControllerDele
         return true
     }
     
-    
-    
-    
-    
     /*
     // MARK: - Navigation
 
@@ -178,5 +174,4 @@ class HOOAddPersonViewController : UIViewController, UIImagePickerControllerDele
         // Pass the selected object to the new view controller.
     }
     */
-
 }

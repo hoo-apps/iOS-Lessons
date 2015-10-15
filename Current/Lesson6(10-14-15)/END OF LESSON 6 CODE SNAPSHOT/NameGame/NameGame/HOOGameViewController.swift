@@ -66,6 +66,7 @@ class HOOGameViewController: UIViewController {
         {
             let alert = UIAlertView(title: "Alert", message: "You've seen everybody", delegate: nil, cancelButtonTitle: "OK")
             alert.show()
+            self.correctPerson = nil
             return
         }
         
@@ -115,6 +116,11 @@ class HOOGameViewController: UIViewController {
     
     @IBAction func selectionMade(sender: UIButton)
     {
+        if (self.correctPerson == nil)
+        {
+            return
+        }
+        
         let player = HOODataStore.sharedInstance.getFirstPlayer()
         if (sender.titleForState(UIControlState.Normal) == self.correctPerson!.getName())
         {
